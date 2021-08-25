@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="clock" class="background">
+
+<defs>
+    <symbol id="minuteLine">
+        <g><line x1="0" y1="-146" x2="0" y2="-137" fill="#CCCCCC" stroke-width="3" /></g>
+    </symbol>
+    <symbol id="secondLine">
+        <g><line x1="0" y1="-146" x2="0" y2="-137" fill="#AAAAAA" stroke-width="1" /></g>
+    </symbol>
+    <symbol id="fiveSeconds">
+        <g transform="rotate(0)"><use href="#minuteLine" /></g>
+        <g transform="rotate(6)"><use href="#secondLine" /></g>
+        <g transform="rotate(12)"><use href="#secondLine" /></g>
+        <g transform="rotate(18)"><use href="#secondLine" /></g>
+        <g transform="rotate(24)"><use href="#secondLine" /></g>
+    </symbol>
+</defs>
+
+<rect x="0" y="0" width="336" height="336" fill="#111111" />
+
+<!-- <circle cx="168" cy="168" r="168" fill="#181818" />
+<circle cx="159" cy="159" r="154" fill="#080808" />
+<circle cx="197" cy="197" r="127" fill="#222222" />
+<circle cx="162" cy="162" r="144" fill="#282828" /> -->
+
+<image id="face" href="face.png" />
+
+<circle cx="168" cy="168" r="148" fill="#EEEEEE" />
+<circle cx="168" cy="168" r="146" fill="#111111" />
+<circle cx="168" cy="168" r="136" fill="white" />
+<circle cx="168" cy="168" r="135" fill="#111111" />
+
+<circle cx="168" cy="168" r="60" fill="#222222" />
+<circle cx="171" cy="168" r="58" fill="#333333" />
+<circle cx="168" cy="171" r="58" fill="#333333" />
+<circle cx="171" cy="171" r="57" fill="#3C3C3C" />
+<circle cx="172" cy="168" r="54" fill="#333333" />
+<circle cx="168" cy="172" r="54" fill="#333333" />
+<circle cx="168" cy="168" r="54" fill="#111111" />
+
+<g transform="translate(168,168)">
+    <g class="secondNumber">
+        <g transform="rotate(0)"  ><text text-anchor="middle" x="0" y="-151">60</text></g>
+        <g transform="rotate(30)" ><text text-anchor="middle" x="0" y="-151">5</text></g>
+        <g transform="rotate(60)" ><text text-anchor="middle" x="0" y="-151">10</text></g>
+        <g transform="rotate(90)" ><text text-anchor="middle" x="0" y="-151">15</text></g>
+        <g transform="rotate(120)"><text text-anchor="middle" x="0" y="-151">20</text></g>
+        <g transform="rotate(150)"><text text-anchor="middle" x="0" y="-151">25</text></g>
+        <g transform="rotate(180)"><text text-anchor="middle" x="0" y="-151">30</text></g>
+        <g transform="rotate(210)"><text text-anchor="middle" x="0" y="-151">35</text></g>
+        <g transform="rotate(240)"><text text-anchor="middle" x="0" y="-151">40</text></g>
+        <g transform="rotate(270)"><text text-anchor="middle" x="0" y="-151">45</text></g>
+        <g transform="rotate(300)"><text text-anchor="middle" x="0" y="-151">50</text></g>
+        <g transform="rotate(330)"><text text-anchor="middle" x="0" y="-151">55</text></g>
+    </g>
+
+    <g transform="rotate(0)"><use href="#fiveSeconds" /></g>
+    <g transform="rotate(30)"><use href="#fiveSeconds" /></g>
+    <g transform="rotate(60)"><use href="#fiveSeconds" /></g>
+    <g transform="rotate(90)"><use href="#fiveSeconds" /></g>
+    <g transform="rotate(120)"><use href="#fiveSeconds" /></g>
+    <g transform="rotate(150)"><use href="#fiveSeconds" /></g>
+    <g transform="rotate(180)"><use href="#fiveSeconds" /></g>
+    <g transform="rotate(210)"><use href="#fiveSeconds" /></g>
+    <g transform="rotate(240)"><use href="#fiveSeconds" /></g>
+    <g transform="rotate(270)"><use href="#fiveSeconds" /></g>
+    <g transform="rotate(300)"><use href="#fiveSeconds" /></g>
+    <g transform="rotate(330)"><use href="#fiveSeconds" /></g>
+
+    <g class="hourNumber">
+        <g transform="rotate(0)"  ><text text-anchor="middle" x="0" y="-102">12</text></g>
+        <g transform="rotate(30)" ><text text-anchor="middle" x="0" y="-102">1</text></g>
+        <g transform="rotate(60)" ><text text-anchor="middle" x="0" y="-102">2</text></g>
+        <g transform="rotate(90)" ><text text-anchor="middle" x="0" y="-102">3</text></g>
+        <g transform="rotate(120)"><text text-anchor="middle" x="0" y="-102">4</text></g>
+        <g transform="rotate(150)"><text text-anchor="middle" x="0" y="-102">5</text></g>
+        <g transform="rotate(180)"><text text-anchor="middle" x="0" y="-102">6</text></g>
+        <g transform="rotate(210)"><text text-anchor="middle" x="0" y="-102">7</text></g>
+        <g transform="rotate(240)"><text text-anchor="middle" x="0" y="-102">8</text></g>
+        <g transform="rotate(270)"><text text-anchor="middle" x="0" y="-102">9</text></g>
+        <g transform="rotate(300)"><text text-anchor="middle" x="0" y="-102">10</text></g>
+        <g transform="rotate(330)"><text text-anchor="middle" x="0" y="-102">11</text></g>
+    </g>
+
+    <g id="zoneLight" transform="translate(-18,-51)">
+        <image href="lightglow.png" width="36" height="36" />
+        <circle id="zoneColor" cx="18" cy="18" r="17" fill="#201911" opacity="0.8" />
+        <image href="zone.png" width="36" height="36" />
+    </g>
+    <g id="stepsLight" transform="translate(-51,-18)">
+        <image href="lightglow.png" width="36" height="36" />
+        <circle id="stepsColor" cx="18" cy="18" r="17" fill="#201911" opacity="0.8" />
+        <image href="steps.png" width="36" height="36" />
+    </g>
+    <g id="distanceLight" transform="translate(15,-18)">
+        <image href="lightglow.png" width="36" height="36" />
+        <circle id="distanceColor" cx="18" cy="18" r="17" fill="#201911" opacity="0.8" />
+        <image href="distance.png" width="36" height="36" />
+    </g>
+    <g id="caloriesLight" transform="translate(-18,15)">
+        <image href="lightglow.png" width="36" height="36" />
+        <circle id="caloriesColor" cx="18" cy="18" r="17" fill="#201911" opacity="0.8" />
+        <image href="calories.png" width="36" height="36" />
+    </g>
+
+    <rect x="-40" y="-83" width="80" height="20" fill="black" />
+    <text id="trip" x="0" y="-67" text-anchor="middle" fill="white" font-size="18" text-length="6" letter-spacing="2">00000</text>
+    <rect x="-43" y="67" width="86" height="20" fill="black" />
+    <text id="odometer" x="0" y="83" text-anchor="middle" fill="white" font-size="18" text-length="5" letter-spacing="4">00000</text>
+    <text id="decimal" x="7" y="85" text-anchor="middle" fill="white" font-size="24" text-length="1" visibility="hidden">.</text>
+</g>
+
+<g transform="translate(168,168)"> <!--  scale(1.2,1.2) -->
+    <g id="hourHand">
+        <g fill="#CCCCCC">
+            <line x1="-2" y1="-95" x2="-7" y2="0" stroke-width="2" />
+            <line x1="-1" y1="-95" x2="-5" y2="0" stroke-width="2" />
+            <line x1="-1" y1="-95" x2="-3" y2="0" stroke-width="2" />
+            <line x1="0"  y1="-95" x2="-1" y2="0" stroke-width="2" />
+        </g>
+        <g fill="#BBBBBB">
+            <line x1="2" y1="-95" x2="7" y2="0" stroke-width="2" />
+            <line x1="1" y1="-95" x2="5" y2="0" stroke-width="2" />
+            <line x1="1" y1="-95" x2="3" y2="0" stroke-width="2" />
+            <line x1="0" y1="-95" x2="1" y2="0" stroke-width="2" />
+        </g>
+    </g>
+    <g id="minuteHand">
+        <g fill="#CCCCCC">
+            <line x1="-2" y1="-120" x2="-5" y2="0" stroke-width="2" />
+            <line x1="-1" y1="-120" x2="-3" y2="0" stroke-width="2" />
+            <line x1="0"  y1="-120" x2="-1" y2="0" stroke-width="2" />
+        </g>
+        <g  fill="#BBBBBB">
+            <line x1="2" y1="-120" x2="5" y2="0" stroke-width="2" />
+            <line x1="1" y1="-120" x2="3" y2="0" stroke-width="2" />
+            <line x1="0" y1="-120" x2="1" y2="0" stroke-width="2" />
+        </g>
+    </g>
+    <g id="secondHand">
+        <line x1="-2" y1="-133" x2="-3" y2="0" stroke-width="2" fill="#CC0000" />
+        <line x1="-1" y1="-133" x2="-1" y2="0" stroke-width="2" fill="#CC0000" />
+        <line x1="2"  y1="-133" x2="3" y2="0" stroke-width="2" fill="#B60000" />
+        <line x1="1"  y1="-133" x2="1" y2="0" stroke-width="2" fill="#B60000" />
+    </g>
+</g>
+
+<circle cx="168" cy="168" r="15" fill="#444444" />
+<circle cx="170" cy="168" r="12" fill="#2C2C2C" />
+<circle cx="168" cy="170" r="12" fill="#2C2C2C" />
+<circle cx="171" cy="171" r="12" fill="#1C1C1C" />
+<circle cx="168" cy="168" r="12" fill="#282828" />
+
+<g id="weatherLight" transform="translate(25,25)">
+    <image href="lightglow.png" width="40" height="40" />
+    <circle id="weatherColor" cx="20" cy="20" r="19" fill="#000022" opacity="0.8" />
+    <image id="weatherIcon" href="" x="5" y="5" width="30" height="30" />
+    <image href="lightrim.png" width="40" height="40" />
+</g>
+<g id="tempLight" transform="translate(271,25)">
+    <image href="lightglow.png" width="40" height="40" />
+    <circle id="tempColor" cx="20" cy="20" r="19" fill="#220800" opacity="0.8" /> <!-- B85B05 -->
+    <text id="tempText" x="20" y="26" width="30" height="30" font-size="18" fill="white" text-anchor="middle" text-length="5">00</text>
+    <image href="lightrim.png" width="40" height="40" />
+</g>
+<g id="batteryLight" transform="translate(25,271)">
+    <image href="lightglow.png" width="40" height="40" />
+    <circle id="batteryColor" cx="20" cy="20" r="19" fill="#220000" opacity="0.8" />
+    <image href="battery.png" x="5" y="5" width="30" height="30" />
+    <image href="lightrim.png" width="40" height="40" />
+</g>
+<g id="heartRateLight" transform="translate(271,271)">
+    <image href="lightglow.png" width="40" height="40" />
+    <g id="heartRate" fill="#002200" opacity="0.8">
+        <circle id="heartRateColor" cx="20" cy="20" r="19" />
+        <animate attributeName="opacity" begin="enable" from="0.6" to="0.8" dur="0.7" final="restore" />
+        <animate attributeName="fill" begin="enable" from="#00AA00" to="#002200" dur="0.5" final="restore" />
+    </g>
+    <image href="heartrate.png" x="5" y="5" width="30" height="30" />
+    <image href="lightrim.png" width="40" height="40" />
+</g>
+
+<circle id="goals" cx="168" cy="168" r="60" fill="#white" opacity="0" />
+
+</svg>
