@@ -28,7 +28,7 @@
 <circle cx="168" cy="168" r="148" fill="#EEEEEE" />
 <circle cx="168" cy="168" r="146" fill="#111111" />
 <circle cx="168" cy="168" r="136" fill="white" />
-<circle cx="168" cy="168" r="135" fill="#111111" />
+<circle cx="168" cy="168" r="135" fill="#191919" />
 
 <circle cx="168" cy="168" r="60" fill="#222222" />
 <circle cx="171" cy="168" r="58" fill="#333333" />
@@ -36,7 +36,7 @@
 <circle cx="171" cy="171" r="57" fill="#3C3C3C" />
 <circle cx="172" cy="168" r="54" fill="#333333" />
 <circle cx="168" cy="172" r="54" fill="#333333" />
-<circle cx="168" cy="168" r="54" fill="#111111" />
+<circle cx="168" cy="168" r="55" fill="#111111" />
 
 <g transform="translate(168,168)">
     <g class="secondNumber">
@@ -87,17 +87,22 @@
         <circle id="zoneColor" cx="18" cy="18" r="17" fill="#201911" opacity="0.8" />
         <image href="zone.png" width="36" height="36" />
     </g>
-    <g id="stepsLight" transform="translate(-51,-18)">
+    <g id="stepsLight" transform="translate(14,-28)">
         <image href="lightglow.png" width="36" height="36" />
         <circle id="stepsColor" cx="18" cy="18" r="17" fill="#201911" opacity="0.8" />
         <image href="steps.png" width="36" height="36" />
     </g>
-    <g id="distanceLight" transform="translate(15,-18)">
+    <g id="distanceLight" transform="translate(6,10)">
         <image href="lightglow.png" width="36" height="36" />
         <circle id="distanceColor" cx="18" cy="18" r="17" fill="#201911" opacity="0.8" />
         <image href="distance.png" width="36" height="36" />
     </g>
-    <g id="caloriesLight" transform="translate(-18,15)">
+    <g id="floorsLight" transform="translate(-42,10)">
+        <image href="lightglow.png" width="36" height="36" />
+        <circle id="floorsColor" cx="18" cy="18" r="17" fill="#201911" opacity="0.8" />
+        <image href="floors.png" width="36" height="36" />
+    </g>
+    <g id="caloriesLight" transform="translate(-50,-28)">
         <image href="lightglow.png" width="36" height="36" />
         <circle id="caloriesColor" cx="18" cy="18" r="17" fill="#201911" opacity="0.8" />
         <image href="calories.png" width="36" height="36" />
@@ -112,36 +117,36 @@
 
 <g transform="translate(168,168)"> <!--  scale(1.2,1.2) -->
     <g id="hourHand">
-        <g fill="#CCCCCC">
-            <line x1="-2" y1="-95" x2="-7" y2="0" stroke-width="2" />
+        <g fill="#AAAAAA">
+            <line x1="-2" y1="-95" x2="-7" y2="0" stroke-width="1" />
             <line x1="-1" y1="-95" x2="-5" y2="0" stroke-width="2" />
             <line x1="-1" y1="-95" x2="-3" y2="0" stroke-width="2" />
             <line x1="0"  y1="-95" x2="-1" y2="0" stroke-width="2" />
         </g>
-        <g fill="#BBBBBB">
-            <line x1="2" y1="-95" x2="7" y2="0" stroke-width="2" />
+        <g fill="#909090">
+            <line x1="2" y1="-95" x2="7" y2="0" stroke-width="1" />
             <line x1="1" y1="-95" x2="5" y2="0" stroke-width="2" />
             <line x1="1" y1="-95" x2="3" y2="0" stroke-width="2" />
             <line x1="0" y1="-95" x2="1" y2="0" stroke-width="2" />
         </g>
     </g>
     <g id="minuteHand">
-        <g fill="#CCCCCC">
-            <line x1="-2" y1="-120" x2="-5" y2="0" stroke-width="2" />
+        <g fill="#AAAAAA">
+            <line x1="-2" y1="-120" x2="-5" y2="0" stroke-width="1" />
             <line x1="-1" y1="-120" x2="-3" y2="0" stroke-width="2" />
             <line x1="0"  y1="-120" x2="-1" y2="0" stroke-width="2" />
         </g>
-        <g  fill="#BBBBBB">
-            <line x1="2" y1="-120" x2="5" y2="0" stroke-width="2" />
+        <g  fill="#909090">
+            <line x1="2" y1="-120" x2="5" y2="0" stroke-width="1" />
             <line x1="1" y1="-120" x2="3" y2="0" stroke-width="2" />
             <line x1="0" y1="-120" x2="1" y2="0" stroke-width="2" />
         </g>
     </g>
     <g id="secondHand">
-        <line x1="-2" y1="-133" x2="-3" y2="0" stroke-width="2" fill="#CC0000" />
-        <line x1="-1" y1="-133" x2="-1" y2="0" stroke-width="2" fill="#CC0000" />
-        <line x1="2"  y1="-133" x2="3" y2="0" stroke-width="2" fill="#B60000" />
-        <line x1="1"  y1="-133" x2="1" y2="0" stroke-width="2" fill="#B60000" />
+        <line x1="-2" y1="-133" x2="-3" y2="0" stroke-width="1" fill="#aa0000" />
+        <line x1="-1" y1="-133" x2="-1" y2="0" stroke-width="2" fill="#aa0000" />
+        <line x1="2"  y1="-133" x2="3" y2="0" stroke-width="1" fill="#960000" />
+        <line x1="1"  y1="-133" x2="1" y2="0" stroke-width="2" fill="#960000" />
     </g>
 </g>
 
@@ -151,35 +156,38 @@
 <circle cx="171" cy="171" r="12" fill="#1C1C1C" />
 <circle cx="168" cy="168" r="12" fill="#282828" />
 
-<g id="weatherLight" transform="translate(25,25)">
-    <image href="lightglow.png" width="40" height="40" />
-    <circle id="weatherColor" cx="20" cy="20" r="19" fill="#000022" opacity="0.8" />
-    <image id="weatherIcon" href="" x="5" y="5" width="30" height="30" />
-    <image href="lightrim.png" width="40" height="40" />
-</g>
-<g id="tempLight" transform="translate(271,25)">
-    <image href="lightglow.png" width="40" height="40" />
-    <circle id="tempColor" cx="20" cy="20" r="19" fill="#220800" opacity="0.8" /> <!-- B85B05 -->
-    <text id="tempText" x="20" y="26" width="30" height="30" font-size="18" fill="white" text-anchor="middle" text-length="5">00</text>
-    <image href="lightrim.png" width="40" height="40" />
-</g>
-<g id="batteryLight" transform="translate(25,271)">
-    <image href="lightglow.png" width="40" height="40" />
-    <circle id="batteryColor" cx="20" cy="20" r="19" fill="#220000" opacity="0.8" />
-    <image href="battery.png" x="5" y="5" width="30" height="30" />
-    <image href="lightrim.png" width="40" height="40" />
-</g>
-<g id="heartRateLight" transform="translate(271,271)">
-    <image href="lightglow.png" width="40" height="40" />
-    <g id="heartRate" fill="#002200" opacity="0.8">
-        <circle id="heartRateColor" cx="20" cy="20" r="19" />
-        <animate attributeName="opacity" begin="enable" from="0.6" to="0.8" dur="0.7" final="restore" />
-        <animate attributeName="fill" begin="enable" from="#00AA00" to="#002200" dur="0.5" final="restore" />
+<g transform="translate(168,168)">
+    <g id="weatherLight" transform="translate(-145,-145)">
+        <image href="lightglow.png" width="48" height="48" />
+        <circle id="weatherColor" cx="24" cy="24" r="22" fill="#000022" opacity="0.8" />
+        <image id="weatherIcon" href="" x="6" y="6" width="36" height="36" />
+        <image href="lightrim.png" width="48" height="48" />
     </g>
-    <image href="heartrate.png" x="5" y="5" width="30" height="30" />
-    <image href="lightrim.png" width="40" height="40" />
+    <g id="tempLight" transform="translate(98,-145)">
+        <image href="lightglow.png" width="48" height="48" />
+        <circle id="tempColor" cx="24" cy="24" r="22" fill="#220800" opacity="0.8" /> <!-- B85B05 -->
+        <text id="tempText" x="24" y="30" width="36" height="36" font-size="22" fill="white" text-anchor="middle" text-length="5">00</text>
+        <image href="lightrim.png" width="48" height="48" />
+    </g>
+    <g id="batteryLight" transform="translate(-145,98)">
+        <image href="lightglow.png" width="48" height="48" />
+        <circle id="batteryColor" cx="24" cy="24" r="22" fill="#220000" opacity="0.8" />
+        <image href="battery.png" x="6" y="6" width="36" height="36" />
+        <image href="lightrim.png" width="48" height="48" />
+    </g>
+    <g id="heartRateLight" transform="translate(98,98)">
+        <image href="lightglow.png" width="48" height="48" />
+        <g id="heartRate" fill="#002200" opacity="0.8">
+            <circle id="heartRateColor" cx="24" cy="24" r="22" />
+            <animate attributeName="opacity" begin="enable" from="0.6" to="0.8" dur="0.7" final="restore" />
+            <animate attributeName="fill" begin="enable" from="#00AA00" to="#002200" dur="0.5" final="restore" />
+        </g>
+        <text id="heartRateText" x="24" y="30" width="36" height="36" font-size="22" fill="white" text-anchor="middle" text-length="5">--</text>
+        <image id="heartRateImage" href="heartrate.png" x="6" y="6" width="36" height="36" />
+        <image href="lightrim.png" width="48" height="48" />
+    </g>
 </g>
 
-<circle id="goals" cx="168" cy="168" r="60" fill="#white" opacity="0" />
+<circle id="goals" cx="168" cy="168" r="60" fill="black" opacity="0" pointer-events="all" />
 
 </svg>

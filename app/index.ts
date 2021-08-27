@@ -52,21 +52,28 @@ var clockController = new Clock(
 // ***** Initialize Body & Heart Rate *****
 console.log("initialize body and heart rate");
 
-const heartRateLight = document.getElementById("heartRateLight");
+const heartRateLight = document.getElementById("heartRateLight") as ImageElement;
+const heartRateText = document.getElementById("heartRateText") as TextElement;
+const heartRateImage = document.getElementById("heartRateImage") as ImageElement;
 var body = null;
 var hrm = null;
 
 function processHeartRate() {
   if (!settings.hideHeartRate && display.on) {
     heartRateLight.animate("enable");
+    heartRateText.text = hrm.heartRate ?? "--";
   }
 }
 
 function processBodyPresence() {
   if (!settings.hideHeartRate && display.on && body.present) {
     hrm.start();
+    heartRateText.style.visibility = "visible";
+    heartRateImage.style.visibility = "hidden";
   } else {
     hrm.stop();
+    heartRateText.style.visibility = "hidden";
+    heartRateImage.style.visibility = "visible";
   }
 }
 
@@ -112,7 +119,7 @@ if (display.aodAvailable && me.permissions.granted("access_aod")) {
       clock.granularity = "minutes";
     }
     processHeartRate();
-    face.updateDisplay();
+    face.updateStats();
   });
 }
 else {
@@ -134,11 +141,11 @@ else {
       clock.granularity = "minutes";
     }
     processHeartRate();
-    face.updateDisplay();
+    face.updateStats();
   });
 }
 
-clockController.updateDisplay = () => { face.updateDisplay() };
+clockController.updateDisplay = () => { face.updateStats() };
 
 // ***** Weather *****
 console.log("set up weather");
