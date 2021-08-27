@@ -9,6 +9,7 @@ class Weather {
     timestamp = 0;
     weatherRunning = false;
     weatherColor = document.getElementById("weatherColor") as ImageElement;
+    tempColor = document.getElementById("tempColor") as ImageElement;
 
     constructor(temp, icon) {
         this.temp = temp;
@@ -21,6 +22,16 @@ class Weather {
             this.temp.text = `${Math.round(weather.temperatureF)}°`;
         else
             this.temp.text = `${Math.round(weather.temperatureC)}°`;
+
+        if(weather.temperatureF >= 90 || weather.temperatureF <= 32) {
+            this.tempColor.style.fill = "#ff9c2a";
+            this.tempColor.style.opacity = 0.6;
+        }
+        else {
+            this.tempColor.style.fill = "#220800";
+            this.tempColor.style.opacity = 0.8;
+        }
+    
         var weatherIcon = this.icon;
         var weatherCode = weather.conditionCode;
         var dayNight;

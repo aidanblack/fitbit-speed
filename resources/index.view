@@ -28,7 +28,7 @@
 <circle cx="168" cy="168" r="148" fill="#EEEEEE" />
 <circle cx="168" cy="168" r="146" fill="#111111" />
 <circle cx="168" cy="168" r="136" fill="white" />
-<circle cx="168" cy="168" r="135" fill="#191919" />
+<circle cx="168" cy="168" r="135" fill="#16191C" />
 
 <circle cx="168" cy="168" r="60" fill="#222222" />
 <circle cx="171" cy="168" r="58" fill="#333333" />
@@ -36,7 +36,7 @@
 <circle cx="171" cy="171" r="57" fill="#3C3C3C" />
 <circle cx="172" cy="168" r="54" fill="#333333" />
 <circle cx="168" cy="172" r="54" fill="#333333" />
-<circle cx="168" cy="168" r="55" fill="#111111" />
+<circle cx="168" cy="168" r="55" fill="#111316" />
 
 <g transform="translate(168,168)">
     <g class="secondNumber">
@@ -165,7 +165,7 @@
     </g>
     <g id="tempLight" transform="translate(98,-145)">
         <image href="lightglow.png" width="48" height="48" />
-        <circle id="tempColor" cx="24" cy="24" r="22" fill="#220800" opacity="0.8" /> <!-- B85B05 -->
+        <circle id="tempColor" cx="24" cy="24" r="22" fill="#220f00" opacity="0.8" /> <!-- B85B05 -->
         <text id="tempText" x="24" y="30" width="36" height="36" font-size="22" fill="white" text-anchor="middle" text-length="5">00</text>
         <image href="lightrim.png" width="48" height="48" />
     </g>
