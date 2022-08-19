@@ -56,7 +56,7 @@ class Weather {
     updateWeather() {
         weather.fetch(this.firstRun * 60 * 1000) // return the cached value if it is less than 30 minutes old 
         .then(weather => this.processWeather(weather))
-        .catch(error => console.log(error.message));
+        .catch(error => console.log(error));
     }
 }
   

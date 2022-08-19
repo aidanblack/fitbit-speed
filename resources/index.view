@@ -30,14 +30,6 @@
 <circle cx="168" cy="168" r="136" fill="white" />
 <circle cx="168" cy="168" r="135" fill="#16191C" />
 
-<circle cx="168" cy="168" r="60" fill="#222222" />
-<circle cx="171" cy="168" r="58" fill="#333333" />
-<circle cx="168" cy="171" r="58" fill="#333333" />
-<circle cx="171" cy="171" r="57" fill="#3C3C3C" />
-<circle cx="172" cy="168" r="54" fill="#333333" />
-<circle cx="168" cy="172" r="54" fill="#333333" />
-<circle cx="168" cy="168" r="55" fill="#111316" />
-
 <g transform="translate(168,168)">
     <g class="secondNumber">
         <g transform="rotate(0)"  ><text text-anchor="middle" x="0" y="-151">60</text></g>
@@ -82,27 +74,27 @@
         <g transform="rotate(330)"><text text-anchor="middle" x="0" y="-102">11</text></g>
     </g>
 
-    <g id="zoneLight" transform="translate(-18,-51)">
+    <g id="zoneLight" transform="translate(-18,-60)">
         <image href="lightglow.png" width="36" height="36" />
         <circle id="zoneColor" cx="18" cy="18" r="17" fill="#201911" opacity="0.8" />
         <image href="zone.png" width="36" height="36" />
     </g>
-    <g id="stepsLight" transform="translate(14,-28)">
+    <g id="stepsLight" transform="translate(25,-28)">
         <image href="lightglow.png" width="36" height="36" />
         <circle id="stepsColor" cx="18" cy="18" r="17" fill="#201911" opacity="0.8" />
         <image href="steps.png" width="36" height="36" />
     </g>
-    <g id="distanceLight" transform="translate(6,10)">
+    <g id="distanceLight" transform="translate(14,18)">
         <image href="lightglow.png" width="36" height="36" />
         <circle id="distanceColor" cx="18" cy="18" r="17" fill="#201911" opacity="0.8" />
         <image href="distance.png" width="36" height="36" />
     </g>
-    <g id="floorsLight" transform="translate(-42,10)">
+    <g id="floorsLight" transform="translate(-50,18)">
         <image href="lightglow.png" width="36" height="36" />
         <circle id="floorsColor" cx="18" cy="18" r="17" fill="#201911" opacity="0.8" />
         <image href="floors.png" width="36" height="36" />
     </g>
-    <g id="caloriesLight" transform="translate(-50,-28)">
+    <g id="caloriesLight" transform="translate(-61,-28)">
         <image href="lightglow.png" width="36" height="36" />
         <circle id="caloriesColor" cx="18" cy="18" r="17" fill="#201911" opacity="0.8" />
         <image href="calories.png" width="36" height="36" />

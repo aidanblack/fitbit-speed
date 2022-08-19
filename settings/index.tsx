@@ -11,22 +11,6 @@ function speedSettings(props) {
                         { name: "Farenheit" }
                     ]}
                 />
-                <Toggle
-                    settingsKey="hideDate"
-                    label="Hide Date"
-                />
-                <Toggle
-                    settingsKey="hideWeather"
-                    label="Hide Weather"
-                />
-                <Toggle
-                    settingsKey="hideHeartRate"
-                    label="Hide Heart Rate"
-                />
-                <Toggle
-                    settingsKey="hideGoals"
-                    label="Hide Goals"
-                />
             </Section>
         </Page>
     );
