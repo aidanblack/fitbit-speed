@@ -8,6 +8,6 @@ Included sensors are:
 + Distance
 + Active Zone Minutes
 
-<img src="Screenshot1.png" />
+<img src="Screenshot01.png" />
 
 This clock has only been tested on Fitbit Versa 3, so please feel free to submit a pull request with any improvements or bug fixes.
