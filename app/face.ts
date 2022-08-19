@@ -94,34 +94,34 @@ class Face {
 
     updateStats () {
         if (this.mode == Face.modes.Zone) {
-            this.zoneColor.style.fill = "#f7b62b";
-            this.caloriesColor.style.fill = "#201911";
+            this.zoneColor.style.opacity = 1;
+            this.caloriesColor.style.opacity = 0.2;
             this.currentCount = today.adjusted.activeZoneMinutes.total;
             this.currentGoal = goals.activeZoneMinutes.total;
         }
         if (this.mode == Face.modes.Steps) {
-            this.stepsColor.style.fill = "#f7b62b";
-            this.zoneColor.style.fill = "#201911";
+            this.stepsColor.style.opacity = 1;
+            this.zoneColor.style.opacity = 0.2;
             this.currentCount = today.adjusted.steps;
             this.currentGoal = goals.steps;
         }
         if (this.mode == Face.modes.Distance) {
-            this.distanceColor.style.fill = "#f7b62b";
-            this.stepsColor.style.fill = "#201911";
+            this.distanceColor.style.opacity = 1;
+            this.stepsColor.style.opacity = 0.2;
             this.decimal.style.visibility ="visible";
             this.currentCount = today.adjusted.distance / 16.09344;
             this.currentGoal = goals.distance / 16.09344;
         }
         if (this.mode == Face.modes.Floors) {
-            this.floorsColor.style.fill = "#f7b62b";
-            this.distanceColor.style.fill = "#201911";
+            this.floorsColor.style.opacity = 1;
+            this.distanceColor.style.opacity = 0.2;
             this.decimal.style.visibility ="hidden";
             this.currentCount = today.adjusted.elevationGain;
             this.currentGoal = goals.elevationGain;
         }
         if (this.mode == Face.modes.Calories) {
-            this.caloriesColor.style.fill = "#f7b62b";
-            this.floorsColor.style.fill = "#201911";
+            this.caloriesColor.style.opacity = 1;
+            this.floorsColor.style.opacity = 0.2;
             this.currentCount = today.adjusted.calories;
             this.currentGoal = goals.calories;
         }
